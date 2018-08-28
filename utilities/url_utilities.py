@@ -53,7 +53,7 @@ def scrape_page(page_contents: str):
             if len(word) < 2 or len(word) > 10:
                 clean = False
 
-            if not re.match(r"^\w+$", word):
+            if not re.match(r'^\w+$', word):
                 clean = False
 
             if clean:
